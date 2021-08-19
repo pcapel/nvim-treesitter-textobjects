@@ -26,3 +26,8 @@
 
 (call
   block: (_)) @block.outer
+
+(call
+  ( method )
+  (arguments)
+  ) @function.arguments
