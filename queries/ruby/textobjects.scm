@@ -30,6 +30,6 @@
 (call
   (identifier)
   (argument_list
-    (string) @string_argument
+    (string) @arguments.string
   )
 ) 
