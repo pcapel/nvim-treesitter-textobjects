@@ -28,8 +28,8 @@
   block: (_)) @block.outer
 
 (call
-  method: (identifier)
-  arguments: (argument_list
-    (string)
+  (identifier)
+  (argument_list
+    (string) @string_argument
   )
-  ) @string_argument
+) 
