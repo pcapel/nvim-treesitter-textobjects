@@ -20,3 +20,12 @@
 ((element (start_tag (tag_name) @_tag) . (_) @_start (_)  @_end . (end_tag))
  (#match? @_tag "^(html|section|h[0-9]|header|title|head|body)$")
  (#make-range! "class.inner" @_start @_end))
+
+(text) @translatable
+
+(
+ (attribute
+  (quoted_attribute_value) @translatable
+ ) @attr
+ (#match? @attr "aria-label")
+)
